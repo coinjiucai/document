@@ -30,3 +30,30 @@ done
 cd ..
 
 echo "All packages have been packed into tgz-packages directory."
+
+
+
+# 第二种处理方式
+
+#!/bin/bash
+
+# 创建存放tgz文件的目录
+mkdir -p tgz-packages
+
+# 进入node_modules目录
+cd node_modules
+
+# 遍历所有目录，包括作用域包
+find . -type d -maxdepth 2 | while read dir; do
+  # 跳过当前目录和node_modules本身
+  if [ "$dir" != "." ] && [ "$dir" != ".." ] && [ "$(basename "$dir")" != "node_modules" ]; then
+    echo "Packing $dir"
+    npm pack "$dir"
+    mv *.tgz ../tgz-packages/
+  fi
+done
+
+# 返回项目根目录
+cd ..
+
+echo "All packages have been packed into tgz-packages directory."
