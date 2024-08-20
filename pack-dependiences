@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# 创建存放tgz文件的目录
+mkdir -p tgz-packages
+
+# 进入node_modules目录
+cd node_modules
+
+# 遍历所有直接子目录（排除以@开头的作用域包）
+for dir in */; do
+  if [[ ! "$dir" == @*/ ]]; then
+    echo "Packing $dir"
+    npm pack "$dir"
+    mv *.tgz ../tgz-packages/
+  fi
+done
+
+# 处理作用域包（如@vue/cli）
+for scope_dir in @*/; do
+  cd "$scope_dir"
+  for dir in */; do
+    echo "Packing $scope_dir$dir"
+    npm pack "$dir"
+    mv *.tgz ../../tgz-packages/
+  done
+  cd ..
+done
+
+# 返回项目根目录
+cd ..
+
+echo "All packages have been packed into tgz-packages directory."
