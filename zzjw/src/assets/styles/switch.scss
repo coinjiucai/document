@@ -1,0 +1,32 @@
+
+:deep().el-switch__label * {
+  line-height: 1;
+  font-size: 12px;
+  display: inline-block;
+}
+
+:deep().el-switch__label {
+  position: absolute;
+  display: none;
+  color: #fff !important;
+  font-size: 12px !important;
+}
+
+:deep().el-switch__label--right {
+  z-index: 1;
+  right: 22px;
+}
+
+:deep().el-switch__label--left {
+  z-index: 1;
+  left: 20px;
+}
+
+:deep().el-switch__label.is-active {
+  display: block;
+}
+
+:deep().el-switch .el-switch__core,
+.el-switch .el-switch__label {
+  width: auto;
+}
