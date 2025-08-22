@@ -1,0 +1,71 @@
+@import './common.scss';
+@import './variables.scss';
+
+@font-face {
+
+  font-family: 'SourceHanSerifCN-Bold';
+  src: url('~@/styles/fonts/SourceHanSerifCN-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+
+  font-family: 'SourceHanSerifCN-Regular';
+  src: url('~@/styles/fonts/SourceHanSerifCN-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PangMenZhengDaoBiaoTiTiMianFeiBan';
+  src: url('~@/styles/fonts/PangMenZhengDaoBiaoTiTiMianFeiBan-2.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 17px;
+  font-family: SourceHanSansSC-Regular;
+  font-weight: normal;
+  color: $fontColor;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.app-container {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}

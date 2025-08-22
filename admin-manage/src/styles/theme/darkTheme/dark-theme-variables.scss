@@ -1,0 +1,50 @@
+/*
+存放主题样式的常量
+包括自定义的、引入的以及element的常量，
+若是全局的常量建议从variables.scss中引入；
+若是仅当前主题需要用到的常量则建议直接写在该页面；
+此处定义的element常量将会替代默认值，
+样式定义可参考官方编辑器：https://element.eleme.cn/#/zh-CN/theme/preview
+*/
+$pf-namespace: '__theme_dark' !default;
+$el-root-selected: '.'+$pf-namespace;
+/*当前主题自定义常量*/
+$dark-white: #86868CFF;
+$light-gray: #3C3F41;
+$middle-gray: #313335FF;
+$dark-gray: #2B2B2B;
+$theme-background-color: $dark-gray;
+$theme-color-text-primary: #F4F2F2;
+$theme-color-text-regular: #FFFFFF;
+$theme-color-text-secondary: #AEAEAE;
+$theme-background-color-header: $middle-gray;
+$theme-background-color-hover: $dark-white;
+$theme-background-color-active: $dark-gray;
+$theme-background-color-light: rgb(66, 66, 66);
+$theme-background-color-primary: rgb(69, 71, 73);
+$theme-scroll-line: #FFFFFF;
+$theme-scroll-background: #909399;
+$theme-title-background: $light-gray;
+$theme-table-striped-background-color: #353734FF;
+/*element的全局常量*/
+//Font Color
+$--color-text-primary: #F4F2F2;
+$--color-text-regular: #FFFFFF;
+$--color-text-secondary: #AEAEAE;
+//Background Color
+$--color-white: $light-gray;
+$--background-color-base: $dark-gray;
+//Button Color
+$--button-primary-font-color: #FFFFFF;
+$--button-success-font-color: #FFFFFF;
+$--button-warning-font-color: #FFFFFF;
+$--button-danger-font-color: #FFFFFF;
+$--button-info-font-color: #FFFFFF;
+//Datepicker
+$--datepicker-inrange-background-color: $--background-color-base;
+$--datepicker-inrange-hover-background-color: $--background-color-base;
+//Table
+$--table-header-background-color: $middle-gray;
+$--table-header-font-color: #ffffff;
+//Tree
+$--tree-node-hover-background-color: $theme-background-color-hover;

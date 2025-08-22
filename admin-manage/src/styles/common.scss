@@ -1,0 +1,1059 @@
+/*
+在这里定义一些公有样式
+注意，ElementUI重置的样式和只有颜色的样式不要放在这里
+不要重复定义，在定义新的样式的时候先看一下是否已有
+新定义的样式尽量和已有的类似或相关的样式放在一起
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('~@/assets/iconfonts/iconfont.woff2?t=1732760956057') format('woff2'),
+    url('~@/assets/iconfonts/iconfont.woff?t=1732760956057') format('woff'),
+    url('~@/assets/iconfonts/iconfont.ttf?t=1732760956057') format('truetype');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//外边距
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.ma10 {
+  margin: 10px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.ma5 {
+  margin: 5px;
+}
+
+//内边距
+.pr10 {
+  padding-right: 10px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pa10 {
+  padding: 10px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+//边框
+.border1 {
+  border: 1px solid solid #ccc;
+}
+
+.borders1 {
+  border: 1px solid solid #ccc;
+  border-radius: 5px;
+}
+
+//宽度
+.w300 {
+  width: 300px !important;
+}
+
+.w230 {
+  width: 230px !important;
+}
+
+.w200 {
+  width: 200px !important;
+}
+
+.w160 {
+  width: 160px !important;
+}
+
+.w120 {
+  width: 120px !important;
+}
+
+.w100 {
+  width: 100px !important;
+}
+
+.w90 {
+  width: 90px !important;
+}
+
+.w80 {
+  width: 80px !important;
+}
+
+.w50 {
+  width: 50px !important;
+}
+
+//高度
+.h36 {
+  height: 36px;
+}
+
+.h20 {
+  height: 20px;
+}
+
+.h18 {
+  height: 18px;
+}
+
+//垂直对齐方式
+.vertical-auto {
+  vertical-align: auto;
+}
+
+.vertical-baseline {
+  vertical-align: baseline;
+}
+
+.vertical-bottom {
+  vertical-align: bottom;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.vertical-sub {
+  vertical-align: sub;
+}
+
+.vertical-super {
+  vertical-align: super;
+}
+
+.vertical-text-bottom {
+  vertical-align: text-bottom;
+}
+
+.vertical-text-top {
+  vertical-align: text-top;
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+
+// 设置元素为inline-block
+.inline-block {
+  display: inline-block;
+}
+
+//全局超出...显示样式
+.nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 设置文本元素单行显示 超出显示...
+.one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.one-line-wrap {
+  > * {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.one-line-wrap.lpatch {
+  word-spacing: -1em;
+
+  > * {
+    word-spacing: 0;
+  }
+}
+
+//禁用点击
+.no-click {
+  pointer-events: none;
+}
+
+//鼠标小手指样式
+.pointer {
+  cursor: pointer;
+}
+
+//文本下划线
+.text-underline {
+  text-decoration: underline;
+}
+
+//文本排列垂直方向，从右向左
+.vertical-text {
+  writing-mode: vertical-lr;
+}
+
+//元素隐藏且占位
+.hidden {
+  visibility: hidden;
+}
+
+//元素隐藏不占位
+.display-none {
+  display: none;
+}
+
+/* flex布局 */
+.flex-layout,
+//元素flex布局
+.flex-layout.el-container {
+  //刷优先级
+  display: flex;
+  flex-direction: column; //方向
+  flex-wrap: nowrap;
+  justify-content: center; //轴线分布
+  align-items: stretch; //正交分布
+  align-content: stretch; //整体对齐
+
+  > * {
+    //防止被子元素撑开 类似overflow效果
+    min-width: 0;
+    min-height: 0;
+  }
+}
+
+.flex-layout {
+  &.fcol {
+    //default //flex-layout 竖向排列
+    flex-direction: column;
+  }
+
+  &.frow {
+    //flex-layout 横向排列
+    flex-direction: row; //方向
+  }
+
+  &.fcol-rev {
+    //flex-layout 竖向排列
+    flex-direction: column-reverse;
+  }
+
+  &.frow-rev {
+    //flex-layout 横向排列
+    flex-direction: row-reverse;
+  }
+}
+
+.h0 {
+  height: 0;
+}
+
+.w0 {
+  width: 0;
+}
+
+.h100p {
+  height: 100%;
+}
+
+.w100p {
+  width: 100% !important;
+}
+
+//平均分布
+.flex1 {
+  flex: 1;
+}
+
+//flex子块按内容比例自动撑开
+.flex-auto {
+  flex: auto;
+  flex: 1 1 auto;
+}
+
+//flex子块使用原始尺寸
+.flex-none {
+  flex: none;
+  flex: 0 0 auto;
+}
+
+//flex子块尺寸平均分布
+.flex-mean {
+  flex: 1 1 100%;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-end {
+  display: flex;
+}
+
+/*Y轴线方向*/
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-stretch {
+  justify-content: stretch;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+/* 正交方向 */
+.align-start {
+  align-items: start;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+/*轴线方向*/
+//这个好像是grid布局有效的
+.justify-self-start {
+  justify-self: start;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.justify-self-stretch {
+  justify-self: stretch;
+}
+
+/* 正交方向 */
+.align-self-start {
+  align-self: start;
+}
+
+.align-self-end {
+  align-self: end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+//和父对象尺寸相同
+.full-block {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+//绝对定位 和父对象尺寸相同 (强行解决父对象被撑开问题 一般不要使用)
+.abs-full-block {
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//元素灰色滤镜
+.gray-filter {
+  filter: grayscale(100%);
+}
+
+//水平滚动 需要另外设置尺寸
+.scroll-x {
+  overflow-x: auto;
+}
+
+//垂直滚动 需要另外设置尺寸
+.scroll-y {
+  overflow-y: auto;
+}
+
+//垂直滚动 需要另外设置尺寸
+.scroll-all {
+  overflow: auto;
+}
+
+//溢出隐藏
+.overflow-hidden {
+  overflow: hidden;
+}
+
+//相对定位 给absolute元素设置参考位置
+.pRelative {
+  position: relative;
+}
+
+//绝对定位，相对于 static 定位以外的第一个父元素进行定位。
+.pAbsolute {
+  position: absolute;
+}
+
+//绝对定位，相对于浏览器窗口进行定位。
+.pFixed {
+  position: fixed;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+//文本对齐
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+//让弹性盒元素在必要的时候拆行
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fWeight {
+  font-weight: bold;
+}
+
+//禁用文本选中-PC端
+.not-select {
+  -moz-user-select: none;
+  /*火狐*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -ms-user-select: none;
+  /*IE10*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  user-select: none;
+}
+
+//禁用文本选中-移动端
+.no-touch {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//静默模式（黑白模式）
+.big-event-gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  //-ms-filter:grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  //filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+
+.form-item-flex {
+  display: flex;
+
+  > div {
+    flex: 1;
+  }
+}
+
+// 绿色
+.device-type-green {
+  display: inline-block;
+  background-color: #077601;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 10px;
+}
+
+// 红色
+.device-type-red {
+  display: inline-block;
+  background-color: #ca151d;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 10px;
+}
+
+// 黄色
+.device-type-yellow {
+  display: inline-block;
+  background-color: #c83e12;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 10px;
+}
+
+// 蓝色
+.device-type-blue {
+  display: inline-block;
+  background-color: #035abe;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 10px;
+}
+
+// 重置主题
+
+.__theme_dark_blue {
+  .el-table {
+    background-color: transparent;
+  }
+
+  .el-table thead tr {
+    background: transparent;
+    background-image: url('~@/assets/images/table_header_bg.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+  }
+
+  .el-table .el-table__cell.gutter {
+    background: transparent;
+  }
+
+  .el-table tbody > tr:nth-child(odd) {
+    background: rgba(33, 149, 101, 0.1) !important;
+
+    &:hover {
+      background: rgba(33, 149, 101, 0.5) !important;
+    }
+  }
+
+  .el-table tbody > tr:nth-child(even) {
+    background: rgba(33, 149, 101, 0.2) !important;
+
+    &:hover {
+      background: rgba(33, 149, 101, 0.5) !important;
+    }
+  }
+
+  .el-table__row:nth-of-type(odd) {
+    background: rgba(33, 149, 101, 0.1) !important;
+
+    &:hover {
+      background: rgba(33, 149, 101, 0.5) !important;
+    }
+  }
+
+  .el-table th.el-table__cell.is-leaf {
+    background: transparent;
+  }
+
+  .el-table td.el-table__cell {
+    background: transparent;
+  }
+
+  .el-table--striped
+    .el-table__body
+    tr.el-table__row--striped
+    td.el-table__cell {
+    background: transparent;
+  }
+
+  .el-table th.el-table__cell.is-leaf,
+  .el-table td.el-table__cell {
+    border-bottom: none;
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+    background: transparent !important;
+    /*hover*/
+  }
+
+  .el-checkbox__inner {
+    background-color: transparent !important;
+    border-color: #fff !important;
+  }
+
+  .el-checkbox__inner::after {
+    border-color: #ffffff !important;
+  }
+
+  .el-input__inner {
+    background-color: transparent;
+  }
+
+  .el-pagination button {
+    background-color: transparent !important;
+  }
+
+  .el-pager li {
+    background-color: transparent !important;
+  }
+
+  .el-pager li.active {
+    // color: #033B6AFF;
+  }
+
+  .el-table::before {
+    height: 0;
+  }
+
+  .el-input-number__increase,
+  .el-input-number__decrease,
+  .el-input-group__append,
+  .el-input-group__prepend {
+    background: transparent;
+  }
+
+  .el-input {
+    display: inline-flex !important;
+  }
+
+  .el-input-group__append {
+    border-radius: 0;
+    overflow: hidden;
+
+    .el-button {
+      background-image: none;
+      margin-top: -2px;
+      width: 100%;
+      margin-left: -26px;
+    }
+  }
+
+  .el-pagination__editor.el-input {
+    display: inline-block !important;
+    padding: 0;
+  }
+
+  .el-input__inner::placeholder {
+    color: #666;
+  }
+
+  /* 谷歌 */
+  .el-input__inner::-webkit-input-placeholder {
+    color: #666;
+  }
+
+  /* 火狐 */
+  .el-input__inner:-moz-placeholder {
+    color: #666;
+  }
+
+  /*ie*/
+  .el-input__inner:-ms-input-placeholder {
+    color: #666;
+  }
+
+  .btn-type-1 {
+    height: 32px;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 10px;
+    min-width: 88px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    background-image: url('~@/assets/images/btn.png');
+    cursor: pointer;
+
+    &:before {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .btn-type-2 {
+    height: 28px;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 10px;
+    min-width: 80px;
+    text-align: center;
+    line-height: 28px;
+    background-image: url('~@/assets/images/search.png');
+    cursor: pointer;
+  }
+
+  .btn-type-3 {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-flex;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+    align-items: center;
+    padding: 0 10px;
+
+    background-image: url('~@/assets/images/search.png');
+    cursor: pointer;
+  }
+
+  .btn-type-cancel {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-flex;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+    align-items: center;
+    padding: 0 10px;
+
+    background-image: url('~@/assets/images/cancel.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .el-icon-search:before {
+    color: #fff;
+  }
+
+  .el-input .el-input__count .el-input__count-inner {
+    color: #999;
+  }
+
+  .el-button {
+    border-color: unset;
+    color: #fff;
+    border: unset;
+
+    border-radius: 0;
+    background: url('~@/assets/images/cancel.png') 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .el-button--primary.is-plain,
+  .el-button--primary {
+    border-color: unset;
+    color: #fff;
+    border: unset;
+    background: unset;
+
+    border-radius: 0;
+
+    // background: url('~@/assets/images/search.png') 100% 100%;
+    background-image: url('~@/assets/images/search.png') !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .el-drawer.rtl {
+    background-image: url('~@/assets/images/main-bg.png');
+    background-repeat: no-repeat;
+  }
+
+  .el-drawer__header {
+    background: transparent;
+  }
+
+  .el-tree {
+    background: transparent;
+  }
+
+  .el-button--text {
+    background: unset;
+  }
+
+  .el-button--primary:hover,
+  .el-button--primary:focus {
+    border-color: unset;
+    color: #fff;
+    border: unset;
+    background: unset;
+
+    border-radius: 0;
+
+    // background: url('~@/assets/images/search.png') 100% 100%;
+    background-image: url('~@/assets/images/search.png') !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .el-button--info:hover,
+  .el-button--info:focus {
+    background: url('~@/assets/images/cancel.png') 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .el-pagination .el-select .el-input .el-input__inner {
+    border-radius: 0;
+  }
+
+  .theme-background-light {
+    background: unset;
+  }
+
+  .component-LeftCatalogue .treeTitle .name {
+    border-left: 3px solid #fff !important;
+  }
+
+  .component-LeftCatalogue .treeTitle .catalogue {
+    color: #fff !important;
+  }
+
+  .el-divider {
+    background-color: transparent;
+  }
+
+  .el-button--warning:hover,
+  .el-button--warning:focus,
+  .el-button--success:hover,
+  .el-button--success:focus,
+  .el-button--danger:hover,
+  .el-button--danger:focus {
+    background-color: transparent;
+    border-color: transparent;
+    background-position: no-repeat;
+    background: url('~@/assets/images/cancel.png') 100% 100%;
+    background-size: 100% 100%;
+  }
+
+  .el-tag.el-tag--info {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .el-tag.el-tag--info .el-tag__close {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .el-button--medium {
+    padding: 11px 20px;
+  }
+
+  .el-button--small {
+    padding: 10px 15px;
+  }
+
+  .el-button--mini {
+    padding: 8px 15px;
+  }
+}
+
+.common-tags-box {
+  // width: 100%;
+  // height: 480px;
+  // padding: 10px;
+  // background-color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  span {
+    margin-left: 10px;
+  }
+
+  .el-tag {
+    color: #fff;
+
+    ::v-deep .el-tag__close {
+      color: #fff !important;
+    }
+  }
+}
+
+/* 针对 WebKit 浏览器的滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px !important;
+  /* 滚动条的宽度 */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(33, 149, 101, 0.5);
+  /* 滚动条轨道的颜色 */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(33, 149, 101, 1) !important;
+  /* 滚动条的颜色 */
+}
+
+.el-select-dropdown__wrap.el-scrollbar__wrap {
+  overflow-x: hidden;
+}
+
+.__theme_dark_blue .el-dialog {
+  position: relative;
+  background-image: linear-gradient(0deg, #146855 0%, #0b2329 100%);
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(0deg, #167f88 0%, #1ee7e7 100%);
+  border-image-slice: 1;
+  border-radius: 0 !important;
+}
+
+.__theme_dark_blue .el-textarea__inner {
+  background-color: #0b1e1b;
+  border-style: solid;
+  border-width: 2px;
+  border-image-source: linear-gradient(90deg, #b3ffda 0%, #0aad40 100%);
+  border-image-slice: 1;
+}
+
+.__theme_dark_blue {
+  .el-range-editor.el-input__inner,
+  .el-input__inner,
+  .el-textarea__inner {
+    border: none;
+    background-size: 100% 100%;
+    background-position: center center;
+    border-radius: 0;
+    background-color: #0b1e1b;
+    border-style: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(90deg, #b3ffda 0%, #0aad40 100%);
+    border-image-slice: 1;
+  }
+}
+
+.box-title {
+  width: 100%;
+  height: 30px;
+  background-image: url('~@/assets/images/title-bg.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  padding-left: 25px;
+  font-family: PangMenZhengDaoBiaoTiTiMianFeiBan;
+  font-size: 20px;
+
+  span {
+    position: relative;
+    top: -5px;
+  }
+}
+
+.full-dialog .el-dialog {
+  margin-top: 20px !important;
+}
+.full-dialog .el-dialog .el-dialog__body {
+  max-height: none !important;
+}
+
+.el-button .el-loading-spinner .circular {
+  width: 24px;
+  height: 24px;
+}
+.el-button .el-loading-spinner {
+  margin-top: -12px;
+}
+.el-select-dropdown__wrap.el-scrollbar__wrap {
+  margin-bottom: 0 !important;
+}

@@ -1,0 +1,2 @@
+import "./MenuIcons";
+import "./iconfont";

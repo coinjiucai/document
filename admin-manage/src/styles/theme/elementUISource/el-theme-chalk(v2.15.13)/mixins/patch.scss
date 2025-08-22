@@ -1,0 +1,6 @@
+@function addroot($parent) {
+  @if $el-root-selected=='' or str-index($parent,$el-root-selected) {
+    @return $parent;
+  }
+  @return '#{selector-nest($el-root-selected,$parent)}';
+}

@@ -1,0 +1,315 @@
+{
+    "xlgzqk": {
+        "cname": "心理工作情况",
+        "level": 1,
+        "fields": []
+    },
+    "jykctop10": {
+        "cname": "教育课程TOP10",
+        "level": 1,
+        "fields": []
+    },
+    "wlxwjj": {
+        "cname": "网络行为聚焦",
+        "level": 1,
+        "fields": []
+    },
+    "xlzysj": {
+        "cname": "心理资源数据",
+        "level": 1,
+        "fields": []
+    },
+    "cjxlqk": {
+        "cname": "场景训练情况",
+        "level": 2,
+        "fields": [
+            {
+                "name": "初级",
+                "children": []
+            },
+            {
+                "name": "中级",
+                "children": []
+            },
+            {
+                "name": "高级",
+                "children": []
+            },
+            {
+                "name": "总人数",
+                "value": ""
+            }
+        ]
+    },
+    "xljksj": {
+        "cname": "心理健康数据",
+        "level": 2,
+        "fields": [
+            {
+                "name": "无",
+                "children": []
+            },
+            {
+                "name": "轻度",
+                "children": []
+            },
+            {
+                "name": "中度",
+                "children": []
+            },
+            {
+                "name": "重度",
+                "children": []
+            }
+        ]
+    },
+    "wjyjqk": {
+        "cname": "危机预警情况",
+        "level": 1,
+        "fields": []
+    },
+    "xlfwwlkj": {
+        "cname": "心理服务网络框架",
+        "level": 1,
+        "fields": []
+    },
+    "zxwttop10": {
+        "cname": "咨询问题TOP10",
+        "level": 2,
+        "fields": [
+            {
+                "name": "预约",
+                "children": []
+            },
+            {
+                "name": "咨询",
+                "children": []
+            }
+        ]
+    },
+    "rwhx-xlxwtz": {
+        "cname": "大数据心理行为特征",
+        "level": 1,
+        "fields": []
+    },
+    "rwhx-zhpj": {
+        "cname": "综合评价",
+        "level": 1,
+        "fields": []
+    },
+    "rwhx-fxyj": {
+        "cname": "风险预警",
+        "level": 1,
+        "fields": []
+    },
+    "rwhx-grxg": {
+        "cname": "个人性格",
+        "level": 1,
+        "fields": []
+    },
+    "gznl": {
+        "cname": "感知能力",
+        "level": 1,
+        "fields": []
+    },
+    "jyl": {
+        "cname": "记忆力",
+        "level": 1,
+        "fields": []
+    },
+    "gcl": {
+        "cname": "观察力",
+        "level": 1,
+        "fields": []
+    },
+    "swnl": {
+        "cname": "注意力",
+        "level": 1,
+        "fields": []
+    },
+    "zyl": {
+        "cname": "注意力",
+        "level": 1,
+        "fields": []
+    },
+    "kznl": {
+        "cname": "控制能力",
+        "level": 1,
+        "fields": []
+    },
+    "zyxl-nl": {
+        "cname": "能力",
+        "level": 1,
+        "fields": []
+    },
+    "zyxl-xq": {
+        "cname": "兴趣",
+        "level": 1,
+        "fields": []
+    },
+    "zyxl-jzg": {
+        "cname": "价值观",
+        "level": 1,
+        "fields": []
+    },
+    "zyxl-ldl": {
+        "cname": "领导力",
+        "level": 1,
+        "fields": []
+    },
+    "zyxl-jcfg": {
+        "cname": "决策风格",
+        "level": 1,
+        "fields": []
+    },
+    "emotion": {
+        "cname": "情绪",
+        "level": 1,
+        "fields": []
+    },
+    "interpersonal": {
+        "cname": "人际",
+        "level": 1,
+        "fields": []
+    },
+    "pressure": {
+        "cname": "压力",
+        "level": 1,
+        "fields": []
+    },
+    "sleep": {
+        "cname": "睡眠",
+        "level": 1,
+        "fields": []
+    },
+    "smyy": {
+        "cname": "生命意义",
+        "level": 1,
+        "fields": []
+    },
+    "xlrx": {
+        "cname": "心理韧性",
+        "level": 1,
+        "fields": []
+    },
+    "rgtzxg": {
+        "cname": "性格",
+        "level": 1,
+        "fields": []
+    },
+    "rgtzxgms": {
+        "cname": "性格描述",
+        "level": 1,
+        "fields": []
+    },
+    "rgtzqz": {
+        "cname": "气质",
+        "level": 1,
+        "fields": []
+    },
+    "rgtzqzms": {
+        "cname": "气质描述",
+        "level": 1,
+        "fields": []
+    },
+    "rgtzydfs": {
+        "cname": "应对方式",
+        "level": 1,
+        "fields": []
+    },
+    "rgtzydfsms": {
+        "cname": "应对方式描述",
+        "level": 1,
+        "fields": []
+    },
+    "xtsyqk-rshz": {
+        "cname": "人数汇总",
+        "level": 1,
+        "fields": []
+    },
+    "xtsyqk-yytj": {
+        "cname": "预约统计",
+        "level": 1,
+        "fields": []
+    },
+    "xtsyqk-zxtj": {
+        "cname": "咨询统计",
+        "level": 1,
+        "fields": []
+    },
+    "xtsyqk-wtlxlftj": {
+        "cname": "问题类型来访统计",
+        "level": 3,
+        "fields": []
+    },
+    "ztqktj-xlzyshu": {
+        "cname": "心理资源数",
+        "level": 1,
+        "fields": []
+    },
+    "ztqktj-xlyjsj": {
+        "cname": "心理预警数据",
+        "level": 1,
+        "fields": []
+    },
+    "ztqktj-rznlshuj": {
+        "cname": "认知能力数据",
+        "level": 3,
+        "fields": []
+    },
+    "ztqktj-chjyjsj": {
+        "cname": "场景应激数据",
+        "level": 3,
+        "fields": []
+    },
+    "ztqktj-xljksj": {
+        "cname": "心理健康数据",
+        "level": 3,
+        "fields": []
+    },
+    "sjfx-xljkqk": {
+        "cname": "心理健康情况",
+        "level": 1,
+        "fields": []
+    },
+    "sjfx-zj": {
+        "cname": "心理教育-总计",
+        "level": 1,
+        "fields": []
+    },
+    "sjfx-dqksqk": {
+        "cname": "当前考试情况",
+        "level": 1,
+        "fields": []
+    },
+    "sjfx-dqxxqk": {
+        "cname": "当前学习情况",
+        "level": 1,
+        "fields": []
+    },
+    "sjfx-rzsjmx": {
+        "cname": "认知数据模型",
+        "level": 1,
+        "fields": []
+    },
+    "sjfx-pfbz": {
+        "cname": "评分标准",
+        "level": 1,
+        "fields": []
+    },
+    "sjfx-rzxl-result": {
+        "cname": "认知数据模型-结果分析",
+        "level": 1,
+        "fields": []
+    },
+    "sjfx-rzxl-xlsjmx": {
+        "cname": "心理数据模型",
+        "level": 1,
+        "fields": []
+    },
+    "sjfx-znxlzx-result": {
+        "cname": "心理数据模型-结果分析",
+        "level": 1,
+        "fields": []
+    }
+}

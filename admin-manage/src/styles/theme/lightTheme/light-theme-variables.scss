@@ -1,0 +1,33 @@
+/*
+存放主题样式的常量
+包括自定义的、引入的以及element的常量，
+若是全局的常量建议从variables.scss中引入；
+若是仅当前主题需要用到的常量则建议直接写在该页面；
+此处定义的element常量将会替代默认值，
+样式定义可参考官方编辑器：https://element.eleme.cn/#/zh-CN/theme/preview
+*/
+$pf-namespace: '__theme_light' !default;
+$el-root-selected: '.'+$pf-namespace;
+/*当前主题自定义常量*/
+$theme-primary-base: #319ed6;
+$theme-background-color: #e0e0e0ee;
+$theme-color-text-primary: #303133;
+$theme-color-text-regular: #606266;
+$theme-color-text-secondary: #909399;
+$theme-background-color-header: #004066FF;
+$theme-background-color-hover: mix($theme-primary-base, $theme-background-color, 30%);
+$theme-background-color-active: mix($theme-primary-base, $theme-background-color, 70%);
+$theme-background-color-light: rgb(251, 251, 251);
+$theme-background-color-primary: rgb(49, 158, 214);
+$theme-scroll-line: $theme-background-color-header;
+$theme-scroll-background: #F2F6FC;
+$theme-title-background: #ffffff;
+$theme-table-striped-background-color: #FAFAFA;
+/*element的全局常量*/
+//Color
+$--color-primary: $theme-primary-base;
+//Table
+$--table-header-background-color: $theme-background-color-header;
+$--table-header-font-color: #ffffff;
+//Tree
+$--tree-node-hover-background-color: $theme-background-color-hover;

@@ -1,0 +1,29 @@
+@import "light-theme-variables";
+
+.#{$pf-namespace} {
+  @import "~@/styles/theme/elementUISource/index.scss";
+  @import "../element-fix";
+  @import "../theme-common";
+  @import "../theme-project";
+
+  body {
+    background: unset;
+    color: unset;
+  }
+
+  .theme-navbar-bg {
+    background-color: #004066FF;
+  }
+
+  .el-message-box__header {
+    .el-message-box__title {
+      color: #FFFFFF;
+    }
+
+    background-color: $theme-background-color-header;
+
+    .el-message-box__headerbtn .el-message-box__close {
+      color: #FFFFFF;
+    }
+  }
+}

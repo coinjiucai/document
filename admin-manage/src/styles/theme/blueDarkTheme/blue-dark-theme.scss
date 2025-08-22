@@ -1,0 +1,30 @@
+@import "blue-dark-theme-variables.scss";
+
+.#{$pf-namespace} {
+  @import "~@/styles/theme/elementUISource/index.scss";
+  @import "../element-fix";
+  @import "../theme-common";
+  @import "../theme-project";
+
+  body {
+    background: rgb(43, 43, 43);
+    color: #FFFFFF;
+  }
+
+  .el-range-input {
+    background: unset;
+  }
+
+  .theme-block-border, .el-message-box, .el-dialog {
+    // box-shadow: 0 0 15px 1px #0CA9ECFF inset;
+    border: none;
+  }
+
+  .el-dialog__header {
+    // box-shadow: 0 9px 22px 1px #0ca9ecff inset;
+  }
+
+  .theme-navbar-bg {
+    background-color: $middle-gray;
+  }
+}

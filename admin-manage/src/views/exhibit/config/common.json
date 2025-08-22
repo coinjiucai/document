@@ -1,0 +1,274 @@
+{
+    "list_type": [
+        {
+            "name": "首页",
+            "value": "1",
+            "components": [
+                {
+                    "name": "平台数据统计",
+                    "value": "xlgzqk"
+                },
+                {
+                    "name": "教育课程TOP10",
+                    "value": "jykctop10"
+                },
+                {
+                    "name": "网络行为词云",
+                    "value": "wlxwjj"
+                },
+                {
+                    "name": "心理资源数据",
+                    "value": "xlzysj"
+                },
+                {
+                    "name": "应激训练",
+                    "value": "cjxlqk"
+                },
+                {
+                    "name": "心理健康数据",
+                    "value": "xljksj"
+                },
+                {
+                    "name": "危机预警情况",
+                    "value": "wjyjqk"
+                },
+                {
+                    "name": "心理工作情况",
+                    "value": "xlfwwlkj"
+                },
+                {
+                    "name": "咨询问题TOP10",
+                    "value": "zxwttop10"
+                }
+            ]
+        },
+        {
+            "name": "人物画像",
+            "value": "2",
+            "components": [
+                {
+                    "name": "大数据心理行为特征",
+                    "value": "rwhx-xlxwtz"
+                },
+                {
+                    "name": "综合评价",
+                    "value": "rwhx-zhpj"
+                },
+                {
+                    "name": "风险预警",
+                    "value": "rwhx-fxyj"
+                },
+                {
+                    "name": "个人性格",
+                    "value": "rwhx-grxg"
+                }
+            ]
+        },
+        {
+            "name": "人物画像-基础脑力",
+            "value": "3",
+            "components": [
+                {
+                    "name": "感知能力",
+                    "value": "gznl"
+                },
+                {
+                    "name": "记忆力",
+                    "value": "jyl"
+                },
+                {
+                    "name": "观察力",
+                    "value": "gcl"
+                },
+                {
+                    "name": "思维能力",
+                    "value": "swnl"
+                },
+                {
+                    "name": "注意力",
+                    "value": "zyl"
+                },
+                {
+                    "name": "控制能力",
+                    "value": "kznl"
+                }
+            ]
+        },
+        {
+            "name": "人物画像-职业心理",
+            "value": "4",
+            "components": [
+                {
+                    "name": "能力",
+                    "value": "zyxl-nl"
+                },
+                {
+                    "name": "兴趣",
+                    "value": "zyxl-xq"
+                },
+                {
+                    "name": "领导力",
+                    "value": "zyxl-ldl"
+                },
+                {
+                    "name": "价值观",
+                    "value": "zyxl-jzg"
+                },
+                {
+                    "name": "决策风格",
+                    "value": "zyxl-jcfg"
+                }
+            ]
+        },
+        {
+            "name": "人物画像-心理资源",
+            "value": "5",
+            "components": [
+                {
+                    "name": "情绪",
+                    "value": "emotion"
+                },
+                {
+                    "name": "人际",
+                    "value": "interpersonal"
+                },
+                {
+                    "name": "压力",
+                    "value": "pressure"
+                },
+                {
+                    "name": "睡眠",
+                    "value": "sleep"
+                },
+                {
+                    "name": "生命意义",
+                    "value": "smyy"
+                },
+                {
+                    "name": "心理韧性",
+                    "value": "xlrx"
+                }
+            ]
+        },
+        {
+            "name": "人物画像-人格特质",
+            "value": "6",
+            "components": [
+                {
+                    "name": "性格",
+                    "value": "rgtzxg"
+                },
+                {
+                    "name": "性格描述",
+                    "value": "rgtzxgms"
+                },
+                {
+                    "name": "气质",
+                    "value": "rgtzqz"
+                },
+                {
+                    "name": "气质描述",
+                    "value": "rgtzqzms"
+                },
+                {
+                    "name": "应对方式",
+                    "value": "rgtzydfs"
+                },
+                {
+                    "name": "应对方式描述",
+                    "value": "rgtzydfsms"
+                }
+            ]
+        },
+        {
+            "name": "系统使用情况",
+            "value": "7",
+            "components": [
+                {
+                    "name": "人数汇总",
+                    "value": "xtsyqk-rshz"
+                },
+                {
+                    "name": "预约统计",
+                    "value": "xtsyqk-yytj"
+                },
+                {
+                    "name": "咨询统计",
+                    "value": "xtsyqk-zxtj"
+                },
+                {
+                    "name": "问题类型来访统计",
+                    "value": "xtsyqk-wtlxlftj"
+                }
+            ]
+        },
+        {
+            "name": "整体情况统计",
+            "value": "8",
+            "components": [
+                {
+                    "name": "心理资源数",
+                    "value": "ztqktj-xlzyshu"
+                },
+                {
+                    "name": "心理预警数据",
+                    "value": "ztqktj-xlyjsj"
+                },
+                {
+                    "name": "认知能力数据",
+                    "value": "ztqktj-rznlshuj"
+                },
+                {
+                    "name": "场景应激数据",
+                    "value": "ztqktj-chjyjsj"
+                },
+                {
+                    "name": "心理健康数据",
+                    "value": "ztqktj-xljksj"
+                }
+            ]
+        },
+        {
+            "name": "数据分析",
+            "value": "9",
+            "components": [
+                {
+                    "name": "心理健康情况",
+                    "value": "sjfx-xljkqk"
+                },
+                {
+                    "name": "心理教育-总计",
+                    "value": "sjfx-zj"
+                },
+                {
+                    "name": "当前考试情况",
+                    "value": "sjfx-dqksqk"
+                },
+                {
+                    "name": "当前学习情况",
+                    "value": "sjfx-dqxxqk"
+                },
+                {
+                    "name": "认知数据模型",
+                    "value": "sjfx-rzsjmx"
+                },
+                {
+                    "name": "评分标准",
+                    "value": "sjfx-pfbz"
+                },
+                {
+                    "name": "认知数据模型-结果分析",
+                    "value": "sjfx-rzxl-result"
+                },
+                {
+                    "name": "心理数据模型",
+                    "value": "sjfx-rzxl-xlsjmx"
+                },
+                {
+                    "name": "心理数据模型-结果分析",
+                    "value": "sjfx-znxlzx-result"
+                }
+            ]
+        }
+    ]
+}
