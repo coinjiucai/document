@@ -1,0 +1,21 @@
+.DS_Store
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/src/server/config.json
+package-lock.json
+# Editor directories and files
+.history
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+cliconfig.json
+# vs code '@/' file path jump support config
+/jsconfig.json
+
